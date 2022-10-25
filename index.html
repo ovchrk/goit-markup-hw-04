@@ -23,8 +23,8 @@
                     <li class="item"><a href="" class="link">Контакти</a></li>
                 </ul>
                 <ul class="contacts">
-                    <li class="item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-                    <li class="item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+                    <li class="item icon-mail"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+                    <li class="item icon-tel"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
                 </ul>
             </nav>
         </div>
@@ -32,27 +32,29 @@
     <main>
         <!-- Головний заголовок-->
         <section class="section-hero">
-            <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-            <button type="button">Замовити послугу</button>
+            <div class="overlay">
+                <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+                <button type="button">Замовити послугу</button>
+            </div>
         </section>
         <!-- Наші переваги-->
         <section class="section">
             <div class="container">
                 <h2 class="hidden-title">Наші переваги</h2>
                 <ul class="advantages">
-                    <li class="item">
+                    <li class="list-item icon-details">
                         <h3>Увага до деталей</h3>
                         <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
                     </li>
-                    <li class="item">
+                    <li class="list-item icon-punct">
                         <h3>Пунктуальність</h3>
                         <p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
                     </li>
-                    <li class="item">
+                    <li class="list-item icon-plan">
                         <h3>Планування</h3>
                         <p>Так само консультація з широким активом значною мірою зумовлює.</p>
                     </li>
-                    <li class="item">
+                    <li class="list-item icon-tech">
                         <h3>Сучасні технології</h3>
                         <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                     </li>
@@ -79,6 +81,12 @@
                         <div class="member-info">
                             <h3>Ігор Дем'яненко</h3>
                             <p lang="en">Product Designer</p>
+                            <ul class="member-icons">
+                                <li class="member-item"><a href="" class="icon-inst1"></a></li>
+                                <li class="member-item"><a href="" class="icon-twitter1"></a></li>
+                                <li class="member-item"><a href="" class="icon-facebook1"></a></li>
+                                <li class="member-item"><a href="" class="icon-linkedin1"></a></li>
+                            </ul>
                         </div>
                     
                     </li>
@@ -86,19 +94,81 @@
                         <div class="member-info">
                             <h3>Ольга Рєпіна</h3>
                             <p lang="en">Frontend Developer</p>
+                            <ul class="member-icons">
+                                <li class="member-item"><a href="" class="icon-inst1"></a></li>
+                                <li class="member-item"><a href="" class="icon-twitter1"></a></li>
+                                <li class="member-item"><a href="" class="icon-facebook1"></a></li>
+                                <li class="member-item"><a href="" class="icon-linkedin1"></a></li>
+                            </ul>
                         </div>
                     </li>
                     <li class="member"><img src="images/img6.jpg" alt="Микола Тарасов" width="270" height="260">
                         <div class="member-info">
                             <h3>Микола Тарасов</h3>
                             <p lang="en">Marketing</p>
+                            <ul class="member-icons">
+                                <li class="member-item"><a href="" class="icon-inst1"></a></li>
+                                <li class="member-item"><a href="" class="icon-twitter1"></a></li>
+                                <li class="member-item"><a href="" class="icon-facebook1"></a></li>
+                                <li class="member-item"><a href="" class="icon-linkedin1"></a></li>
+                            </ul>
                         </div>
                     </li>
                     <li class="member"><img src="images/img7.jpg" alt="Михайло Єрмаков" width="270" height="260">
                         <div class="member-info">
                             <h3>Михайло Єрмаков</h3>
                             <p lang="en">UI Designer</p>
+                            <ul class="member-icons">
+                                <li class="member-item"><a href="" class="icon-inst1"></a></li>
+                                <li class="member-item"><a href="" class="icon-twitter1"></a></li>
+                                <li class="member-item"><a href="" class="icon-facebook1"></a></li>
+                                <li class="member-item"><a href="" class="icon-linkedin1"></a></li>
+                            </ul>
                         </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--Наші партнери-->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Постійні клієнти</h2>
+                <ul class="partners">
+                    <li class="partner"> 
+                        <a href="" class="company-1">
+                        <svg class="icon-company">
+                            <use href="./images/symbol-defs.svg#icon-icon-company-1"></use>
+                        </svg>
+                    </a> 
+                    </li>
+                    <li class="partner"> 
+                        <a href="" class="company-2">
+                        <svg class="icon-company">
+                            <use href="./images/symbol-defs.svg#icon-icon-company-2"></use>
+                        </svg></a> 
+                    </li>
+                    <li class="partner"> 
+                        <a href="" class="company-3">
+                        <svg class="icon-company" width="106" height="60">
+                            <use href="./images/symbol-defs.svg#icon-icon-company-3"></use>
+                        </svg></a>
+                    </li>
+                    <li class="partner"> 
+                        <a href="" class="company-4"></a>
+                        <svg class="icon-company">
+                            <use href="./images/symbol-defs.svg#icon-icon-company-4"></use>
+                        </svg> </li>
+                    <li class="partner">
+                        <a href="" class="company-5">
+                            <svg class="icon-company" width="106" height="60">
+                                <use href="./images/symbol-defs.svg#icon-icon-company-3"></use>
+                            </svg></a>
+                    </li>
+                    <li class="partner">
+                        <a href="" class="company-6">
+                            <svg class="icon-company" width="106" height="60">
+                                <use href="./images/symbol-defs.svg#icon-icon-company-3"></use>
+                            </svg></a>
                     </li>
                 </ul>
             </div>
@@ -106,15 +176,26 @@
     </main>
     <!-- Footer-->
     <footer class="footer">
-        <div class="container">
-            <a href="./index.html" class="logo-light"><span class="logo-blue">Web</span>Studio</a>
-            <address>
-                <ul class="bottom-information">
-                    <li class="item">м. Київ, пр-т Лесі Українки, 26</li>
-                    <li class="item"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li class="item"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <div class="container bottom-sections">
+            <div class="footer-1">
+                <a href="./index.html" class="logo-light"><span class="logo-blue">Web</span>Studio</a>
+                <address>
+                    <ul class="bottom-information">
+                        <li class="item">м. Київ, пр-т Лесі Українки, 26</li>
+                        <li class="item"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li class="item"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    </ul>
+                </address>
+            </div>
+            <div class="footer-2">
+                <h3>Приєднуйтесь</h3>
+                <ul class="bottom-social-links">
+                    <li class="item insta"><a href=""></a></li>
+                    <li class="item twitter"><a href=""></a></li>
+                    <li class="item facebook"><a href=""></a></li>
+                    <li class="item linkedin"><a href=""></a></li>
                 </ul>
-            </address>
+            </div>
         </div>
     </footer>
 </body>

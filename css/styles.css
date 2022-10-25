@@ -107,15 +107,46 @@ ul {
 .contacts .item + .item {
     margin-left: 50px;
 }
+.contacts .icon-mail::before {
+    content: "";
+    height: 12px;
+    width: 16px;
+    background-image: url("../images/envelope.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.contacts .icon-tel::before {
+    content: "";
+    height: 16px;
+    width: 10px;
+    background-image: url("../images/smartphone.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    cursor: pointer;
 
+}
 /* Головний заголовок */
-
+.section-hero .overlay {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    height: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background.jpg");
+    background-color: #C4C4C4;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    
+}
 .section-hero {
     height: 600px;
     text-align: center;
-    background-color: #2F303A;
-    padding-top: 200px;
-    padding-bottom: 200px;
 }
 
 
@@ -154,19 +185,51 @@ ul {
 
 
 .hidden-title {
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 .advantages {
     display: flex;
     flex-wrap: wrap;
 }
 
-.advantages .item {
+.advantages .list-item {
     width: 270px;
     display: inline-block;
 }
-.advantages .item:not(:last-child) {
+.advantages .list-item:not(:last-child) {
     margin-right: 30px;
+}
+.list-item::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon-details::before {
+    background-image: url("../images/icon-details.svg");
+}
+.icon-punct::before {
+    background-image: url("../images/icon-punct.svg");
+}
+.icon-plan::before {
+    background-image: url("../images/icon-plan.svg");
+}
+.icon-tech::before {
+    background-image: url("../images/icon-tech.svg");
 }
 .advantages h3 {
     width: 270px;
@@ -246,17 +309,111 @@ ul {
     padding-top: 30px;
     padding-bottom: 30px;
 }
+/*.member-info::after {
+    display: inline-block;
+    content: "";
+    height: 44px;
+    background: var(--color-background);
+    border-radius: 4px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}*/
 .member-info h3 {
     margin-top: 0;
     margin-bottom: 10px;
 }
+.member-info p {
+    margin-bottom: 10px;
+}
+.member-icons {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 270px;
+    justify-content: center;
+}
+.member-icons a {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+.member-item:not(:last-child) {
+    margin-right: 10px;
+}
+.member-icons .icon-inst1 {
+    background-image: url("../images/icon-instagram-1.svg");
+}
+.member-icons .icon-twitter1 {
+    background-image: url("../images/icon-twitter-1.svg");
+}
+.member-icons .icon-facebook1 {
+    background-image: url("../images/icon-facebook-1.svg");
+}
+.member-icons .icon-linkedin1 {
+    background-image: url("../images/icon-linkedin-1.svg");
+}
+/*наши партнеры*/
+.partners {
+    display: flex;
+}
+.partner {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+.partner:hover {
+    border: 1px solid #2196F3;
+}
+.partners .partner:not(:last-child) {
+    margin-right: 30px;
+}
+.icon-company {
+    width: 106px;
+    height: 60px;
+
+}
+/* .partners .partner::before {
+    display: block;
+    content: "";
+    height: 52px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.partner .company-1::before {
+    background-image: url();
+}
+.partner .company-2::before {
+    background-image: url();
+}
+.partner .company-3::before {
+    background-image: url();
+}
+.partner .company-4::before {
+    background-image: url();
+}
+.partner .company-5::before {
+    background-image: url();
+}
+.partner .company-6::before {
+    background-image: url();
+} */
 
 /* Footer */
 .footer {
-    display: block;
     background-color: var(--color-background-second);
     padding-top: 60px;
     padding-bottom: 60px;
+}
+.bottom-sections {
+    display: flex;
+}
+.footer-1 {
+    margin-right: 70px;
 }
 .logo-light {
     display: inline-block;
@@ -287,7 +444,6 @@ ul {
     line-height: 1.7;
     
     color: var(--color-links);
-
 }
 
 .bottom-information a:hover {
@@ -296,6 +452,27 @@ ul {
 
 .bottom-information a:focus {
     color: var(--brand-color);
+}
+.footer h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-background);
+}
+.bottom-social-links {
+    display: flex;
+    
+}
+.bottom-social-links .item::before {
+    display: block;
+    content: "";
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 /*portfolio*/
