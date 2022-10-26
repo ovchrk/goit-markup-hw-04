@@ -105,8 +105,8 @@ ul {
     justify-content: space-between;
     color: var(--color-text);
 }
-.contacts .link:hover,
-.contacts .link:focus {
+.contacts .link:hover, .contact-icon
+.contacts .link:focus .contact-icon {
     color: var(--brand-color);
     fill: var(--brand-color);
 }
@@ -115,7 +115,7 @@ ul {
 }
 .contact-icon {
     margin-right: 10px;
-    fill: var(--color-text);
+    fill: currentColor;
     cursor: pointer;
 }
 
@@ -356,21 +356,13 @@ ul {
 .partners .partner:not(:last-child) {
     margin-right: 30px;
 }
-.partner .icon-company {
-    width: 106px;
-    height: 60px;
-}
+
 .partner .company {
     fill: var(--icon-color-grey);
 }
 .partner .company:hover {
     fill: var(--brand-color);
 }
-/*.icon-company {
-    width: 106px;
-    height: 60px;
-}*/
-
 
 /* Footer */
 .footer {
