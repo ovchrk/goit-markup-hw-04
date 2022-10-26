@@ -376,7 +376,9 @@ ul {
 .footer-1 {
     margin-right: 70px;
 }
-
+.footer-2 h3 {
+    margin: 0;
+}
 .logo-light {
     display: inline-block;
     font-family: var(--font-logo);
