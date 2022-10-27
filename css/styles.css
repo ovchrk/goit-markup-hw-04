@@ -302,7 +302,7 @@ ul {
     margin-bottom: 10px;
 }
 .member-info p {
-    margin-bottom: 10px;
+    margin-bottom: 16px;
 }
 .member-icons {
     display: flex;
@@ -346,11 +346,10 @@ ul {
     height: 92px;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
     cursor: pointer;
     background-color: transparent;
 }
-.partner:hover {
+.partner:hover, .partner:focus {
     border: 1px solid #2196F3;
 }
 .partners .partner:not(:last-child) {
@@ -360,9 +359,14 @@ ul {
 .partner .company {
     fill: var(--icon-color-grey);
 }
-.partner .company:hover {
+.partner .company:hover, .partner .company:focus {
     fill: var(--brand-color);
 }
+.icon-company {
+    width: 106px;
+    max-height: 92px;
+}
+
 
 /* Footer */
 .footer {
@@ -376,8 +380,11 @@ ul {
 .footer-1 {
     margin-right: 70px;
 }
+.footer-2 {
+    align-items: baseline;
+}
 .footer-2 h3 {
-    margin: 0;
+    margin-bottom: 20px;
 }
 .logo-light {
     display: inline-block;
@@ -410,7 +417,7 @@ ul {
     color: var(--color-links);
 }
 
-.bottom-information a:hover {
+.bottom-information a:hover  {
     color: var(--brand-color);
 }
 
@@ -438,6 +445,9 @@ ul {
     background-color: rgba(255, 255, 255, 0.1);
 }
 .bottom-social-links a:hover {
+    background-color: var(--brand-color);
+}
+.bottom-social-links a:focus {
     background-color: var(--brand-color);
 }
 .bottom-social-links svg {
@@ -493,6 +503,9 @@ ul {
     border: 1px solid #EEEEEE;
     margin-right: 30px;
     margin-bottom: 30px;
+}
+.examples .item:hover, .examples .item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .examples .item:nth-child(3n) {
     margin-right: 0;
